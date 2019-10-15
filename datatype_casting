@@ -1,0 +1,40 @@
+package data_and_operation;
+
+public class Casting {
+
+	public static void main(String[] args) {
+		double a=1.1;
+		double b=1;
+		System.out.println(b);
+		
+		//int c=1.1;
+		double d=1.1;
+		int e=(int) 1.1;
+		System.out.println(e);
+		
+		//1 to string
+		String f=Integer.toString(1);
+		System.out.println(f.getClass());
+		
+		//string to 1
+		String g="1234";
+		int converted_g;
+		converted_g=Integer.parseInt(g);
+		System.out.println(converted_g+1); //1235
+		System.out.println(g+1);//12341
+		
+		//integer형태로 지속 반환(연산 불가능형태'valueOf')
+		Integer g_prime=Integer.valueOf("1234");
+		System.out.println("g_prime is: "+g_prime);
+		System.out.println("g_prime +1 is: "+ g_prime+1);
+		
+		//string->int(연산 가능 형태'parseInt')
+		int g_doubleprime=Integer.parseInt("1234");
+		System.out.println("g_doubleprime is: "+g_doubleprime);
+		
+		//g_doubleprime=g_doubleprime+1;
+		System.out.println("g_doubleprime+1 is: "+g_doubleprime+1);
+		// g_doubleprime+1을 바로 출력하면 바로 1235가 나오는데 이렇게 문장과 같이쓰면 12341이 출력되요 이유가 뭘까요
+
+	}
+}
